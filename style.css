@@ -1,0 +1,46 @@
+.heart {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 100px;
+    background: #ff00aa;
+    animation: pulse 1s infinite alternate; 
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff00aa;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute; 
+    background: #ff00aa;
+}
+
+.top {
+    top: 100px;
+}
+
+.left {
+    left: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: orange;
+}
+
+@keyframes pulse {
+    0%   {transform: scale(0.9) rotate(-135deg);}
+    100% {transform: scale(1.1) rotate(-135deg);}
+}
